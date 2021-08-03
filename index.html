@@ -61,6 +61,10 @@
         backdrop-filter: blur(12px);
         transition: all 0.3s ease;
         color: #fff;
+      }
+      td,
+      th,
+      tr {
         border-color: black;
       }
       thead > tr:first-child th:first-child {
@@ -76,6 +80,7 @@
       thead tr:last-child th:first-child,
       tr > td:first-child {
         position: sticky;
+        background: rgba(0, 0, 0, 0.75);
         left: 0;
         z-index: 2;
       }
@@ -121,11 +126,11 @@
         width: 28px;
         transform: translateY(-50%);
         font-size: 0.75rem;
-        transition: transform 0.3s ease;
-        display: none;
+        opacity: 0;
+        transition: all 0.3s ease;
       }
       th[aria-sort]:after {
-        display: block;
+        opacity: 1;
       }
       th[aria-sort="ascending"] {
       }
